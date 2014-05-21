@@ -22,15 +22,15 @@ public class Client extends Thread {
 		while(actPage <= maxPage){
 			try{
 				beginTransaction();
-				Client.sleep(2000);
+				Client.sleep(400);
 				
 				write("Erster Eintrag Für Transaction " + currentTaId, actPage);
 				actPage++;
-				Client.sleep(2000);
+				Client.sleep(400);
 	
 				write("Zweiter Eintrag Für Transaction " + currentTaId, actPage);
 				actPage++;
-				Client.sleep(2000);
+				Client.sleep(400);
 	
 				commit();
 			}

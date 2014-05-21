@@ -15,7 +15,7 @@ public class Main {
 		client2.run();
 		
 		try {
-			Thread.sleep(15000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
