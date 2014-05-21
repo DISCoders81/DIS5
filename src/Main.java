@@ -7,8 +7,22 @@
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Client client1 = new Client(1);
+		Client client2 = new Client(2);
+		
+		client1.run();
+		client2.run();
+		
+		try {
+			Thread.sleep(15000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		client1.interrupt();
+		client2.interrupt();
+		
 	}
 
 }
