@@ -33,4 +33,13 @@ public class Page {
 	public void setData(String data) {
 		this.data = data;
 	}
+	
+	public boolean checkForCommit(){
+		if(!(ta == null)){
+			return ta.getCommitted();
+		}
+		else {
+			return false;
+		}
+	}
 }
